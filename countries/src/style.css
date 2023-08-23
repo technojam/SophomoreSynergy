@@ -1,3 +1,4 @@
+/*Anubhav's css*/
 *{
     padding: 0;
     margin: 0;
@@ -45,3 +46,73 @@
     padding: 10px;
     font-size: 13px;
 }
+
+
+/*farhan's css*/
+
+.card1 {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mode {
+    padding: 10px 20px;
+            background-color: #050d17;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+}
+
+.card2 {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#searchInput {
+    border: none;
+    padding: 5px;
+}
+
+#searchButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.select-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#continentSelect {
+    border: none;
+    padding: 5px;
+    width: 150px;
+}
+
