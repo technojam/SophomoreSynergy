@@ -1,83 +1,103 @@
-/*Anubhav's css*/
-*{
+/* Anubhav's CSS */
+
+* {
     padding: 0;
     margin: 0;
+    background-color: hsl(207, 26%, 17%);
 }
 
-.card-container{
+.card-container {
     background-color: hsl(207, 26%, 17%);
     height: 100vh;
-    padding: 4% 3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.card{
+
+.card {
     margin: 20px 30px;
     background-color: hsl(209, 23%, 22%);
     height: 300px;
     width: 250px;
     border-radius: 7px;
 }
-.flag-container{
+
+.flag-container {
     background-color: white;
     width: 100%;
     height: 50%;
-    overflow: hidden; 
+    overflow: hidden;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
-.flag-container > img{
+
+.flag-container > img {
     width: 100%;
     height: 100%;
 }
-.country-container{
+
+.country-container {
     color: white;
     font-family: Nunito Sans;
     padding: 10%;
+    background-color: hsl(209, 23%, 22%);
+    display: flex;
+    flex-direction: column;
 }
-.country-container > h4{
+
+.country-container > h4 {
     padding-bottom: 10px;
+    background-color: hsl(209, 23%, 22%);
 }
-.country-container > strong{
+
+.country-container > strong {
     font-size: 13px;
+    background-color: hsl(209, 23%, 22%);padding-left: 10px;
 }
-.country-container > span{
-    padding: 10px;
+
+.country-container > span {
+    padding: 10px 0px;
     font-size: 13px;
+    background-color: hsl(209, 23%, 22%);
 }
 
+/* Farhan's CSS */
 
-/*farhan's css*/
-
-.card1 {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 11%;
+    background-color: hsl(209, 23%, 22%);
 }
 
+.heading {
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    font-family: Nunito Sans;
+}
+
+.mode-container {
+    background-color: hsl(209, 23%, 22%);
+    display: flex;
+    align-items: center;
+}
+
+.night-mode {
+    width: 15px;
+}
 
 .mode {
-    padding: 10px 20px;
-            background-color: #050d17;
-            color: #fff;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
+    background-color: hsl(209, 23%, 22%);
+    padding: 0px 12px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: Nunito Sans;
 }
 
-.card2 {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.row {
+.container-2 {
+    padding: 30px 11%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,33 +106,76 @@
 .search-bar {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    justify-content: center;
+    background-color: hsl(209, 23%, 22%);
+    padding: 10px;
     border-radius: 5px;
-    padding: 5px;
+}
+
+#searchButton {
+    border: none;
+    background-color: hsl(209, 23%, 22%);
+}
+
+#searchButton > img {
+    width: 25px;
+    background-color: hsl(209, 23%, 22%);
 }
 
 #searchInput {
     border: none;
-    padding: 5px;
-}
-
-#searchButton {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.select-bar {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
+    background-color: hsl(209, 23%, 22%);
+    width: 300px;
+    font-size: 15px;
 }
 
 #continentSelect {
     border: none;
-    padding: 5px;
-    width: 150px;
+    border-right: 10px solid hsl(209, 23%, 22%);
+    padding: 15px 25px;
+    width: 200px;
+    height: 60px;
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    font-family: Nunito Sans;
 }
 
+/* Media Queries */
+
+@media screen and (max-width: 735px) {
+    .container {
+        padding: 30px 7%px;
+    }
+    
+    .container-2 {
+        padding: 30px 7%;
+    }
+    #searchInput{
+        width: 200px;
+    }  
+}
+
+@media screen and (max-width: 620px) {
+      .card{
+        height: 500px;
+        width: 400px;
+      }
+
+    .container{
+        padding: 30px 4%;
+    }
+      .heading{
+        font-size: 15px;
+      }
+      .container-2{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 4%;
+      }
+      #continentSelect{
+        margin-top: 20px;
+      }
+}
+
+/* Add more media queries for other screen sizes if necessary */
