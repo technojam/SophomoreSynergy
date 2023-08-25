@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: hsl(207, 26%, 17%);
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 11%;
+    background-color: hsl(209, 23%, 22%);
+}
+
+.heading {
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    font-family: Nunito Sans;
+}
+
+.mode-container {
+    background-color: hsl(209, 23%, 22%);
+    display: flex;
+    align-items: center;
+}
+
+.night-mode {
+    width: 15px;
+}
+
+.mode {
+    background-color: hsl(209, 23%, 22%);
+    padding: 0px 12px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: Nunito Sans;
+}
+
+.container-2 {
+    padding: 30px 11%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.back{
+    width: 130px;
+    height: 35px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(209, 23%, 22%);
+    box-shadow: 0px 0px 10px 0px black;
+    font-family: Nunito Sans;
+}
+.data-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Nunito Sans;
+    padding: 30px 11%;
+    height: 100vh;
+}
+.flag-container {
+    width: 500px;
+    overflow: hidden;
+}
+
+.flag-container > img {
+    width: 100%;
+    height: 100%;
+}
+.country-data{
+    padding-top: 40px;
+    padding-left: 70px;
+    width: 50%;
+    height: 300px;
+}
+.country-data > h4{
+    font-size: 30px;
+}
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.data > span{
+    padding-right: 130px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+.footer{
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.footer> strong{
+    padding-right: 10px;
+}
+.footer > span{
+    font-size: 13px;
+    margin-top: 200px;
+    padding: 5px 30px;
+    background-color: hsl(209, 23%, 22%);
+}
+
+@media screen and (max-width: 1340px) {
+    .data > span{
+        padding-right: 100px;
+    }
+}
+@media screen and (max-width:1235px) {
+    .data > span{
+        padding-right: 60px;
+    }
+
+    .flag-container {
+        width: 400px;
+        overflow: hidden;
+    }
+    .data-container{
+        display: flex;
+        justify-content: left;
+        padding: 4px 11%
+    }
+    .country-data{
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+
+    }
+@media screen and (max-width:1007px) {
+    .data-container{
+        flex-direction: column;
+    }
+    .flag-container {
+        width: 400px;
+        overflow: hidden;
+    }
+    .country-data{
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+    
+}
+@media screen and (max-width:777px) {
+    .data-container{
+        justify-content: left;
+    }
+    
+}
