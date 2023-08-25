@@ -37,7 +37,7 @@
 }
 
 .container-2 {
-    padding: 30px 11%;
+    padding: 15px 11%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +58,7 @@
     align-items: center;
     color: white;
     font-family: Nunito Sans;
-    padding: 30px 11%;
+    padding: 0px 11%;
     height: 100vh;
 }
 .flag-container {
@@ -71,7 +71,7 @@
     height: 100%;
 }
 .country-data{
-    padding-top: 40px;
+    /* padding-top: 40px; */
     padding-left: 70px;
     width: 50%;
     height: 300px;
@@ -137,7 +137,7 @@
         overflow: hidden;
     }
     .country-data{
-        padding-top: 40px;
+        /* padding-top: 40px; */
         padding-left: 10px;
     }
     
