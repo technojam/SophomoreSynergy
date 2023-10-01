@@ -2,23 +2,29 @@
     padding: 0;
     margin: 0;
     background-color: hsl(207, 26%, 17%);
+    background-color: hsl(0, 0%, 98%);
 }
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 11%;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .heading {
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     color: white;
+    color: black;
     font-family: Nunito Sans;
 }
 
 .mode-container {
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     align-items: center;
 }
@@ -26,12 +32,15 @@
 .night-mode {
     width: 15px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .mode {
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     padding: 0px 12px;
     color: #fff;
+    color: black;
     border: none;
     cursor: pointer;
     font-family: Nunito Sans;
@@ -43,72 +52,87 @@
     justify-content: space-between;
     align-items: center;
 }
-.back{
+
+.back {
     width: 130px;
     height: 35px;
     border: none;
     color: white;
+    color: black;
     border-radius: 5px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     box-shadow: 0px 0px 10px 0px black;
     font-family: Nunito Sans;
 }
-.data-container{
+
+.data-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    color: black;
     font-family: Nunito Sans;
     padding: 0px 11%;
     height: 70vh;
 }
+
 .flag-container {
     width: 500px;
     overflow: hidden;
 }
 
-.flag-container > img {
+.flag-container>img {
     width: 100%;
     height: 100%;
 }
-.country-data{
+
+.country-data {
     /* padding-top: 40px; */
     padding-left: 70px;
     width: 50%;
     height: 300px;
 }
-.country-data > h4{
+
+.country-data>h4 {
     font-size: 30px;
 }
-.data{
+
+.data {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
 }
-.data > span{
+
+.data>span {
     padding-right: 130px;
     padding-top: 10px;
     font-size: 13px;
 }
-.footer{
+
+.footer {
     padding-top: 20px;
 }
-.footer> strong{
+
+.footer>strong {
     padding-right: 10px;
 }
-.footer > span{
+
+.footer>span {
     font-size: 13px;
     padding: 5px 30px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 @media screen and (max-width: 1340px) {
-    .data > span{
+    .data>span {
         padding-right: 100px;
     }
 }
+
 @media screen and (max-width:1235px) {
-    .data > span{
+    .data>span {
         padding-right: 60px;
     }
 
@@ -116,92 +140,108 @@
         width: 400px;
         overflow: hidden;
     }
-    .data-container{
+
+    .data-container {
         display: flex;
         justify-content: left;
         padding: 4px 11%
     }
-    .country-data{
+
+    .country-data {
         padding-top: 40px;
         padding-left: 20px;
     }
 
-    }
+}
+
 @media screen and (max-width:1007px) {
-    
+
     .flag-container {
         width: 400px;
         overflow: hidden;
     }
-    .country-data{
+
+    .country-data {
         /* padding-top: 40px; */
         padding-left: 10px;
     }
-    .data-container{
+
+    .data-container {
         padding: 4px 8%
     }
-    
+
 }
+
 @media screen and (max-width:890px) {
-    .data-container{
+    .data-container {
         padding: 4px 4%
     }
-    .data > span{
+
+    .data>span {
         padding-right: 30px;
     }
 }
 
 @media screen and (max-width:730px) {
-    .data-container{
+    .data-container {
         flex-direction: column;
     }
-    
+
 }
+
 @media screen and (max-width:680px) {
-    .flag-container{
+    .flag-container {
         width: 400px;
     }
-    .country-data{
+
+    .country-data {
         padding-left: 0px;
     }
-    .country-data{
+
+    .country-data {
         width: 100%;
     }
-    .data-container{
+
+    .data-container {
         align-items: start;
     }
-    .heading{
+
+    .heading {
         font-size: 15px;
     }
 }
+
 @media screen and (max-width:480px) {
-    .footer > span{
+    .footer>span {
         display: flex;
         flex-direction: column;
         margin-top: 10px;
     }
 }
+
 @media screen and (max-width:430px) {
-    .flag-container{
+    .flag-container {
         width: 300px;
         height: 300px;
 
     }
-    .data > span{
+
+    .data>span {
         width: 100%;
     }
 }
-    
+
 @media screen and (max-width:331px) {
-    .container{
+    .container {
         flex-direction: column;
         align-items: start;
     }
-    .heading{
+
+    .heading {
         margin-bottom: 20px;
     }
-    .flag-container{
+
+    .flag-container {
         width: 95%;
     }
 }
-    
