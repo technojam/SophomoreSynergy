@@ -4,10 +4,12 @@
     padding: 0;
     margin: 0;
     background-color: hsl(207, 26%, 17%);
+    background-color: hsl(0, 0%, 98%);
 }
 
 .card-container {
     background-color: hsl(207, 26%, 17%);
+    background: hsl(0, 0%, 98%);
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -17,6 +19,7 @@
 .card {
     margin: 50px 30px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     height: 300px;
     width: 250px;
     border-radius: 7px;
@@ -31,35 +34,40 @@
     border-top-right-radius: 7px;
 }
 
-.flag-container > img {
+.flag-container>img {
     width: 100%;
     height: 100%;
 }
 
 .country-container {
     color: white;
+    color: black;
     font-family: Nunito Sans;
     padding: 10%;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
 }
 
-.country-container > h4 {
+.country-container>h4 {
     padding-bottom: 10px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
-.country-container > span>strong {
+.country-container>span>strong {
     font-size: 13px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     padding-right: 10px;
 }
 
-.country-container > span {
+.country-container>span {
     padding: 10px 0px;
     font-size: 13px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 /* Farhan's CSS and Anubhav's CSS  */
@@ -70,16 +78,20 @@
     align-items: center;
     padding: 30px 11%;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .heading {
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     color: white;
+    color: black;
     font-family: Nunito Sans;
 }
 
 .mode-container {
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     align-items: center;
 }
@@ -87,12 +99,15 @@
 .night-mode {
     width: 15px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .mode {
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     padding: 0px 12px;
     color: #fff;
+    color: black;
     border: none;
     cursor: pointer;
     font-family: Nunito Sans;
@@ -110,6 +125,7 @@
     align-items: center;
     justify-content: center;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     padding: 10px;
     border-radius: 5px;
 }
@@ -117,17 +133,20 @@
 #searchButton {
     border: none;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
-#searchButton > img {
+#searchButton>img {
     width: 25px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 #searchInput {
     border: none;
     padding: 10px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     width: 300px;
     font-size: 15px;
 }
@@ -135,11 +154,14 @@
 #continentSelect {
     border: none;
     border-right: 10px solid hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     padding: 15px 25px;
     width: 200px;
     height: 60px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     color: white;
+    color: black;
     font-family: Nunito Sans;
 }
 
@@ -149,35 +171,39 @@
     .container {
         padding: 30px 7%px;
     }
-    
+
     .container-2 {
         padding: 30px 7%;
     }
-    #searchInput{
+
+    #searchInput {
         width: 200px;
-    }  
+    }
 }
 
 @media screen and (max-width: 620px) {
-      .card{
+    .card {
         height: 500px;
         width: 400px;
-      }
+    }
 
-    .container{
+    .container {
         padding: 30px 4%;
     }
-      .heading{
+
+    .heading {
         font-size: 15px;
-      }
-      .container-2{
+    }
+
+    .container-2 {
         flex-direction: column;
         align-items: flex-start;
         padding: 30px 4%;
-      }
-      #continentSelect{
+    }
+
+    #continentSelect {
         margin-top: 20px;
-      }
+    }
 }
 
 /* Add more media queries for other screen sizes if necessary */
