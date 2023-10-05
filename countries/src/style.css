@@ -5,11 +5,13 @@
     margin: 0;
     background-color: var(--bgcolor);
     background-color: hsl(207, 26%, 17%);
+    background-color: hsl(0, 0%, 98%);
 }
 
 
 .card-container {
     background-color: hsl(207, 26%, 17%);
+
     background-color: var(--bgcolor);
     padding-top: 70px;
     padding-left: 170px;
@@ -17,6 +19,12 @@
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+
+    background: hsl(0, 0%, 98%);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
     justify-content: center;
 }
 
@@ -30,6 +38,7 @@
     margin: 50px 30px;
     margin-bottom: 50px ;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     height: 300px;
     width: 250px;
     border-radius: 7px;
@@ -45,17 +54,23 @@
 }
 
 
+
 .flag-container>img {
     object-fit: cover;
+
+.flag-container>img {
+
     width: 100%;
     height: 100%;
 }
 
 .country-container {
     color: white;
+    color: black;
     font-family: Nunito Sans;
     padding: 10%;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
 }
@@ -63,11 +78,13 @@
 .country-container>h4 {
     padding-bottom: 10px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .country-container>span>strong {
     font-size: 13px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     padding-right: 10px;
 }
 
@@ -75,6 +92,7 @@
     padding: 10px 0px;
     font-size: 13px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 
@@ -87,29 +105,48 @@
     align-items: center;
     padding: 30px 11%;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .heading {
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     color: white;
+    color: black;
     font-family: Nunito Sans;
     background-color: var(--bgcolor);
 }
 
 .mode-container {
+
     background-color: var(--bgcolor);
+
+    background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
+
     display: flex;
     align-items: center;
 }
 
 .night-mode {
     width: 15px;
+
     
 }
 
 .mode {
+
+    background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.mode {
+    background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
+
     padding: 0px 12px;
     color: #fff;
+    color: black;
     border: none;
     cursor: pointer;
     font-family: Nunito Sans;
@@ -130,6 +167,7 @@
     align-items: center;
     justify-content: center;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     padding: 10px;
     border-radius: 5px;
     /* background-color: var(--bgcolor); */
@@ -138,29 +176,53 @@
 #searchButton {
     border: none;
     background-color: hsl(209, 23%, 22%);
+
     background-color: var(--bgcolor);
+
+    background-color: hsl(0, 0%, 100%);
+
 }
 
 #searchButton>img {
     width: 25px;
     background-color: hsl(209, 23%, 22%);
+
     background-color: var(--bgcolor);
+
 }
 
 #searchInput {
     border: none;
     padding: 10px;
     background-color: hsl(209, 23%, 22%);
+
     background-color: var(--bgcolor);
+
+    background-color: hsl(0, 0%, 100%);
+
     width: 300px;
     font-size: 15px;
     color: white;
 }
 
+
 .dropdowncol{
     color: white;
     width: 150px;
     position: relative;
+
+#continentSelect {
+    border: none;
+    border-right: 10px solid hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px 25px;
+    width: 200px;
+    height: 60px;
+    background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
+    color: white;
+    color: black;
+
     font-family: Nunito Sans;
 }
 
@@ -209,10 +271,13 @@
     .container {
         padding: 30px 7%px;
     }
+
     .card-container{
         padding-left: 30px;
         padding-right: 30px;
     }
+
+
     .container-2 {
         padding: 30px 7%;
     }
@@ -222,7 +287,11 @@
     }
 }
 
+
 @media screen and (max-width: 660px) {
+
+@media screen and (max-width: 620px) {
+
     .card {
         height: 500px;
         width: 400px;
@@ -235,18 +304,26 @@
     .heading {
         font-size: 15px;
     }
+
     .card-container{
         padding-left: 80px;
         padding-right: 80px;
         justify-content: center;
     }
+=======
+
+
     .container-2 {
         flex-direction: column;
         align-items: flex-start;
         padding: 30px 4%;
     }
 
+
     .dropdowncol {
+
+    #continentSelect {
+
         margin-top: 20px;
     }
 }

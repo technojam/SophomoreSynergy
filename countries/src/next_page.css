@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     background-color: hsl(207, 26%, 17%);
+    background-color: hsl(0, 0%, 98%);
 }
 
 .container {
@@ -10,16 +11,20 @@
     align-items: center;
     padding: 30px 11%;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .heading {
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     color: white;
+    color: black;
     font-family: Nunito Sans;
 }
 
 .mode-container {
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     align-items: center;
 }
@@ -27,12 +32,15 @@
 .night-mode {
     width: 15px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .mode {
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     padding: 0px 12px;
     color: #fff;
+    color: black;
     border: none;
     cursor: pointer;
     font-family: Nunito Sans;
@@ -50,8 +58,10 @@
     height: 35px;
     border: none;
     color: white;
+    color: black;
     border-radius: 5px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
     box-shadow: 0px 0px 10px 0px black;
     font-family: Nunito Sans;
 }
@@ -61,17 +71,23 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+    color: black;
     font-family: Nunito Sans;
     padding: 0px 11%;
     height: 70vh;
 }
 
-.flag-container-details {
+
+
+.flag-container {
+
     width: 500px;
     overflow: hidden;
 }
 
-.flag-container-details>img {
+
+
+.flag-container>img {
     width: 100%;
     height: 100%;
 }
@@ -111,6 +127,7 @@
     font-size: 13px;
     padding: 5px 30px;
     background-color: hsl(209, 23%, 22%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 @media screen and (max-width: 1340px) {
@@ -144,7 +161,8 @@
 
 @media screen and (max-width:1007px) {
 
-    .flag-container-details {
+    .flag-container {
+
         width: 400px;
         overflow: hidden;
     }
@@ -178,7 +196,9 @@
 }
 
 @media screen and (max-width:680px) {
-    .flag-container-details {
+
+    .flag-container {
+
         width: 400px;
     }
 
@@ -208,7 +228,9 @@
 }
 
 @media screen and (max-width:430px) {
-    .flag-container-details {
+
+    .flag-container {
+
         width: 300px;
         height: 300px;
 
@@ -229,6 +251,7 @@
         margin-bottom: 20px;
     }
 
+
     .flag-container-details {
         width: 95%;
     }
@@ -236,4 +259,9 @@
 
 .show{
     display: none;
+
+    .flag-container {
+        width: 95%;
+    }
+
 }
