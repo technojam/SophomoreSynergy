@@ -5,75 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries | Technojam</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="next_page.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap">
 
 </head>
 <body>
-
-      <div class="container">
-        
-                <h2 class="heading">Where in the World?</h2>
-        
+    <div class="container">
+        <h2 class="heading">Where in the World?</h2>
         <div class="mode-container ">
-                <img class="night-mode"src="noun-dark-mode-4066359.png" alt="">
-                <button class="mode">Dark mode</button>
+            <img class="night-mode moon" src="noun-dark-mode-4066359.png" alt="">
+            <button class="mode">Dark mode</button>
         </div>
     </div>
     <div class="container-2">
         <div class="card2 ">
             <div class="search-bar">
-                <button id="searchButton"><img src="searchbar.png" alt="Search"></button>
-                <input type="text" id="searchInput" placeholder="search for a country...">
+                <button id="searchButton" "><img src="searchbar.png" alt="Search"></button>
+                <input type="text" class="searcharea" id="searchInput" placeholder="search for a country...">
             </div>
         </div>
-            <select id="continentSelect">
-                <option value="Africa">Africa</option>
-                <option value="Asia">Asia</option>
-                <option value="Europe">India</option>
-                <option value="America">North America</option>
-                <option value="Ocenia">South America</option>
-            </select>
-        
+        <div class="dropdowncol">
+            <div class="dropdown">
+                <p>Filter by region</p>
+                <button><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="drop showdropdown">
+                <p class="region">Asia</p>
+                <p class="region">Africa</p>
+                <p class="region">America</p>
+                <p class="region">Europe</p>
+                <p class="region">All</p>
+            </div>
+        </div>
+
     </div>
-            
-        
-        
-        
-        <!-- card part -->
-        <div class="card-container">
-        <div class="card">
-            <div class="flag-container">
-                <img src="germany-flag.png" alt="">
-            </div>
-            <div class="country-container">
-                <h4>Germany</h4>
-                <span><strong>Population:</strong>999999999</span>
-                <span><strong>Region:</strong>Europe</span>
-                <span><strong>Capital:</strong>Berlin</span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="flag-container">
-                <img src="germany-flag.png" alt="">
-            </div>
-            <div class="country-container">
-                <h4>Germany</h4>
-                <span><strong>Population:</strong>999999999</span>
-                <span><strong>Region:</strong>Europe</span>
-                <span><strong>Capital:</strong>Berlin</span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="flag-container">
-                <img src="germany-flag.png" alt="">
-            </div>
-            <div class="country-container">
-                <h4>Germany</h4>
-                <span><strong>Population:</strong>999999999</span>
-                <span><strong>Region:</strong>Europe</span>
-                <span><strong>Capital:</strong>Berlin</span>
-            </div>
-        </div>
+    <div class="countries">
+
+    </div>
+
+    <div class="countrymodle  show">
+
         <div class="card">
             <div class="flag-container">
                 <img src="germany-flag.png" alt="">
@@ -130,11 +101,18 @@
             </div>
         </div>
         </div>
+
         
+        
+    </div>
 
 
+    <!-- card part -->
+    <div class="card-container">      
+            
+    </div>
 
     <!-- js link -->
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

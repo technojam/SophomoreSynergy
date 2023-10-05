@@ -77,10 +77,15 @@
     height: 70vh;
 }
 
+
+
 .flag-container {
+
     width: 500px;
     overflow: hidden;
 }
+
+
 
 .flag-container>img {
     width: 100%;
@@ -136,7 +141,7 @@
         padding-right: 60px;
     }
 
-    .flag-container {
+    .flag-container-details-details {
         width: 400px;
         overflow: hidden;
     }
@@ -157,6 +162,7 @@
 @media screen and (max-width:1007px) {
 
     .flag-container {
+
         width: 400px;
         overflow: hidden;
     }
@@ -190,7 +196,9 @@
 }
 
 @media screen and (max-width:680px) {
+
     .flag-container {
+
         width: 400px;
     }
 
@@ -220,7 +228,9 @@
 }
 
 @media screen and (max-width:430px) {
+
     .flag-container {
+
         width: 300px;
         height: 300px;
 
@@ -241,7 +251,17 @@
         margin-bottom: 20px;
     }
 
+
+    .flag-container-details {
+        width: 95%;
+    }
+}
+
+.show{
+    display: none;
+
     .flag-container {
         width: 95%;
     }
+
 }
