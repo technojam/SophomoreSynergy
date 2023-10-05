@@ -3,19 +3,32 @@
 * {
     padding: 0;
     margin: 0;
+    background-color: var(--bgcolor);
     background-color: hsl(207, 26%, 17%);
 }
 
+
 .card-container {
     background-color: hsl(207, 26%, 17%);
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: var(--bgcolor);
+    padding-top: 70px;
+    padding-left: 170px;
+    padding-right: 170px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     justify-content: center;
+}
+
+.country{
+    margin: 20px;
+    width: 300px;
+    height: 400px;
 }
 
 .card {
     margin: 50px 30px;
+    margin-bottom: 50px ;
     background-color: hsl(209, 23%, 22%);
     height: 300px;
     width: 250px;
@@ -25,13 +38,15 @@
 .flag-container {
     background-color: white;
     width: 100%;
-    height: 50%;
+    height: 200px;
     overflow: hidden;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
 
-.flag-container > img {
+
+.flag-container>img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -45,22 +60,24 @@
     flex-direction: column;
 }
 
-.country-container > h4 {
+.country-container>h4 {
     padding-bottom: 10px;
     background-color: hsl(209, 23%, 22%);
 }
 
-.country-container > span>strong {
+.country-container>span>strong {
     font-size: 13px;
     background-color: hsl(209, 23%, 22%);
     padding-right: 10px;
 }
 
-.country-container > span {
+.country-container>span {
     padding: 10px 0px;
     font-size: 13px;
     background-color: hsl(209, 23%, 22%);
 }
+
+
 
 /* Farhan's CSS and Anubhav's CSS  */
 
@@ -76,26 +93,27 @@
     background-color: hsl(209, 23%, 22%);
     color: white;
     font-family: Nunito Sans;
+    background-color: var(--bgcolor);
 }
 
 .mode-container {
-    background-color: hsl(209, 23%, 22%);
+    background-color: var(--bgcolor);
     display: flex;
     align-items: center;
 }
 
 .night-mode {
     width: 15px;
-    background-color: hsl(209, 23%, 22%);
+    
 }
 
 .mode {
-    background-color: hsl(209, 23%, 22%);
     padding: 0px 12px;
     color: #fff;
     border: none;
     cursor: pointer;
     font-family: Nunito Sans;
+    background-color: var(--bgcolor);
 }
 
 .container-2 {
@@ -103,6 +121,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: hsl(207, 26%, 17%);
+    background-color: var(--bgcolor);
 }
 
 .search-bar {
@@ -112,72 +132,123 @@
     background-color: hsl(209, 23%, 22%);
     padding: 10px;
     border-radius: 5px;
+    /* background-color: var(--bgcolor); */
 }
 
 #searchButton {
     border: none;
     background-color: hsl(209, 23%, 22%);
+    background-color: var(--bgcolor);
 }
 
-#searchButton > img {
+#searchButton>img {
     width: 25px;
     background-color: hsl(209, 23%, 22%);
+    background-color: var(--bgcolor);
 }
 
 #searchInput {
     border: none;
     padding: 10px;
     background-color: hsl(209, 23%, 22%);
+    background-color: var(--bgcolor);
     width: 300px;
     font-size: 15px;
+    color: white;
 }
 
-#continentSelect {
-    border: none;
-    border-right: 10px solid hsl(209, 23%, 22%);
-    padding: 15px 25px;
-    width: 200px;
-    height: 60px;
-    background-color: hsl(209, 23%, 22%);
+.dropdowncol{
     color: white;
+    width: 150px;
+    position: relative;
     font-family: Nunito Sans;
+}
+
+.dropdown{
+    background-color: hsl(209, 23%, 22%);
+    /* background-color: var(--bgcolor); */
+    height: 20px;
+    width: 100%;
+    padding: 17px 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.dropdown p{
+    background-color: hsl(209, 23%, 22%);
+    background-color: var(--bgcolor);
+    
+}
+.drop{
+    margin-top: 10px;
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    background-color: hsl(209, 23%, 22%);
+    /* background-color: var(--bgcolor); */
+}
+
+.drop p{
+    background-color: hsl(209, 23%, 22%);
+    background-color: var(--bgcolor);
+    padding: 10px;
+}
+
+.showdropdown{
+    display: none;
 }
 
 /* Media Queries */
 
+@media screen and (max-width: 934px) {
+    .card-container{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
 @media screen and (max-width: 735px) {
     .container {
         padding: 30px 7%px;
     }
-    
+    .card-container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .container-2 {
         padding: 30px 7%;
     }
-    #searchInput{
+
+    #searchInput {
         width: 200px;
-    }  
+    }
 }
 
-@media screen and (max-width: 620px) {
-      .card{
+@media screen and (max-width: 660px) {
+    .card {
         height: 500px;
         width: 400px;
-      }
+    }
 
-    .container{
+    .container {
         padding: 30px 4%;
     }
-      .heading{
+
+    .heading {
         font-size: 15px;
-      }
-      .container-2{
+    }
+    .card-container{
+        padding-left: 80px;
+        padding-right: 80px;
+        justify-content: center;
+    }
+    .container-2 {
         flex-direction: column;
         align-items: flex-start;
         padding: 30px 4%;
-      }
-      #continentSelect{
+    }
+
+    .dropdowncol {
         margin-top: 20px;
-      }
+    }
 }
 
 /* Add more media queries for other screen sizes if necessary */
