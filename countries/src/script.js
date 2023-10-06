@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const url = await fetch("https://restcountries.com/v3.1/all");
     const res = await url.json();
     console.log(res);
-    const countriesToShow = res.slice(0, 6);
+    const countriesToShow = res.slice(0,);
     countriesToShow.forEach((element) => {
       showcountry(element);
     });
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   mode.addEventListener("click",()=>{
-    document.body.classList.toggle("light")
+    document.body.classList.toggle("light");
     
   })
 });
@@ -101,9 +101,9 @@ function showcountrydetails(data){
   <div class="country-data">
       <h4>${data.name.common}</h4>
       <div class="data">
-          <span><strong>Native Name :</strong>${data.name.nativeName.fra.common}</span>
+          <span><strong>Native Name :</strong>${data.name}</span>
           <span><strong>Population :</strong>${data.population}</span>
-          <span><strong>Region :</strong>${data.region}</span>
+          <span><strong>Region :</strong>${data.name}</span>
           <span><strong>Sub-region :</strong>${data.subregion}</span>
           <span><strong>Capital :</strong>${data.capital}</span>
           <span><strong>Currencies :</strong>${data.currencies.XPF.name}</span>

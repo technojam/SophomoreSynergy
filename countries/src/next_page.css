@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: hsl(207, 26%, 17%);
+    /* background-color: hsl(207, 26%, 17%); */
     background-color: hsl(0, 0%, 98%);
 }
 
@@ -10,12 +10,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 11%;
-    background-color: hsl(209, 23%, 22%);
+    /* background-color: hsl(209, 23%, 22%); */
     background-color: hsl(0, 0%, 100%);
 }
 
 .heading {
-    background-color: hsl(209, 23%, 22%);
+    /* background-color: hsl(209, 23%, 22%); */
     background-color: hsl(0, 0%, 100%);
     color: white;
     color: black;
@@ -23,7 +23,7 @@
 }
 
 .mode-container {
-    background-color: hsl(209, 23%, 22%);
+    /* background-color: hsl(209, 23%, 22%); */
     background-color: hsl(0, 0%, 100%);
     display: flex;
     align-items: center;
@@ -31,12 +31,12 @@
 
 .night-mode {
     width: 15px;
-    background-color: hsl(209, 23%, 22%);
+    /* background-color: hsl(209, 23%, 22%); */
     background-color: hsl(0, 0%, 100%);
 }
 
 .mode {
-    background-color: hsl(209, 23%, 22%);
+    /* background-color: hsl(209, 23%, 22%); */
     background-color: hsl(0, 0%, 100%);
     padding: 0px 12px;
     color: #fff;
@@ -60,7 +60,7 @@
     color: white;
     color: black;
     border-radius: 5px;
-    background-color: hsl(209, 23%, 22%);
+    /* background-color: hsl(209, 23%, 22%); */
     background-color: hsl(0, 0%, 100%);
     box-shadow: 0px 0px 10px 0px black;
     font-family: Nunito Sans;
@@ -79,11 +79,7 @@
 
 
 
-.flag-container {
 
-    width: 500px;
-    overflow: hidden;
-}
 
 
 
@@ -126,7 +122,7 @@
 .footer>span {
     font-size: 13px;
     padding: 5px 30px;
-    background-color: hsl(209, 23%, 22%);
+    /* background-color: hsl(209, 23%, 22%); */
     background-color: hsl(0, 0%, 100%);
 }
 
